@@ -1,0 +1,43 @@
+EA SETUP:
+You can run all the pairs from a single chart using the OneChartSetup (only M15 timeframe)
+This EA is NOT sensitive to spread, slippage or any other broker related variables.
+Use the recommended pairs only.
+
+Input Parameters
+
+OneChartSetup — Launching the adviser at once in several currencies from one chart. Currency pairs must be listed with ",".
+For_magic — Prefix for unique magic. Must be between 0 and 99.
+Only_One_Symbol? — If true, and there are open positions on the account, the adviser does not open new series of orders in another currency.
+For_autolot_use — Which base should be used by the adviser when calculating the lot: equity or balance.
+Or_use_fix_balance — Or insert a fixed amount of balance in the currency of your deposit.
+AutoMM — if > 0, the EA uses automatic money management when calculating the lot. AutoMM <=1000 — very aggressive. AutoMM >= 5000 — conservative.
+Fix_lot_if_AutoMM=0 — fixed lot for the first deal in a series.
+Recovery_Mode — If true, then the adviser closes a series of orders only with profit, but at the same time the logic of work may be violated. If false, then the EA works in accordance with its logic and a series of orders can be closed at a loss.
+Martin_Ratio — martingale coefficient for a series of orders.
+First_real_deal — The greater the value, the less often the trades, but they are better.
+Recommended Input Parameters (balanced risk):
+
+AUDNZD,NZDCAD,AUDCAD
+Only one symbol? = false
+For Autolot use: equity
+AutoMM = 2000
+Recovery Mode = true
+First real deal = 3
+Minimum balance $1000
+Recommended leverage 1:200 or more
+
+Recommended Input Parameters  (balanced risk):
+
+OneChartSetup = AUDNZD,NZDCAD,AUDCAD,EURGBP*0.5,EURUSD*0.5,GBPUSD*0.5,USDCAD*0.5,GBPCAD*0.5,EURCAD*0.5
+Only one symbol? = false
+For Autolot use: equity
+AutoMM = 3000
+Recovery Mode = true
+First real deal = 3
+Minimum balance $5000
+Recommended leverage 1:200 or more
+
+These settings are used by the North East Way and Multi Way signals 
+
+Run the EA on the same chart with the M15 timeframe.
+

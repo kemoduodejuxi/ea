@@ -1,0 +1,20 @@
+_base_==========Basic settings=========
+MultiCurrency=AUDNZD,NZDCAD,AUDCAD
+comment=NEW
+FirstPositionp=1
+fastClose=false
+nmbrThisServer=1
+long_holidays=false
+useVirtualTP=false
+_mm_==========Money Management Settings=========
+OnlyOneSymbol=false
+MaxOtherMagics=0
+BaseForLotCalc=0
+fix_balance=0.0
+USD_for_001=3111
+Lots=0.01
+_aver_==========Averaging Settings=========
+UseUnloss=true
+LotsMartinp=2.5
+_grid_==========Grid Level Settings=========
+FirstNumberp=3
